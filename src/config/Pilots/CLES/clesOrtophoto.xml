@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layer version="1" layerType="TiledImageLayer">
+    <DisplayName>clesOrtophoto</DisplayName>
+    <Service serviceName="OGC:WMS" version="1.3.0">
+        <GetCapabilitiesURL>http://77.72.192.34:8080/geoserver/CLES/wms</GetCapabilitiesURL>
+        <GetMapURL>http://77.72.192.34:8080/geoserver/CLES/wms</GetMapURL>
+        <LayerNames>cles:orthophoto_25832</LayerNames>
+    </Service>
+    <RetrievePropertiesFromService>false</RetrievePropertiesFromService>
+    <!--day month year hours:minutes:seconds timezone -->
+    <DataCacheName>CLES_orthophoto_25832</DataCacheName>
+    <ImageFormat>image/dds</ImageFormat>
+    <AvailableImageFormats>
+        <ImageFormat>image/jpeg</ImageFormat>
+        <ImageFormat>image/png</ImageFormat>
+        <ImageFormat>image/gif</ImageFormat>
+    </AvailableImageFormats>
+    <FormatSuffix>.dds</FormatSuffix>
+    <NumLevels count="16" numEmpty="0"/>
+    <TileOrigin>
+        <LatLon units="degrees" latitude="-90" longitude="-180"/>
+    </TileOrigin>
+    <LevelZeroTileDelta>
+        <LatLon units="degrees" latitude="36" longitude="36"/>
+    </LevelZeroTileDelta>
+    <TileSize>
+        <Dimension width="512" height="512"/>
+    </TileSize>
+	<Sector>
+		<SouthWest>
+			<LatLon units="degrees" latitude="46.34377312354346"
+				longitude="11.012355018822781" />
+		</SouthWest>
+		<NorthEast>
+			<LatLon units="degrees" latitude="46.38136895572244"
+				longitude="11.053992508212492" />
+		</NorthEast>
+	</Sector>
+    <UseTransparentTextures>false</UseTransparentTextures>
+    <!--<ScreenCredit creditType="ScreenImage">-->
+    <!--<FileName>images/32x32-icon-nasa.png</FileName>-->
+    <!--<Link>http://worldwind.arc.nasa.gov/java</Link>-->
+    <!--</ScreenCredit>-->
+    <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="20000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+</Layer>

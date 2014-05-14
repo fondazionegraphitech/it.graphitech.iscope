@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElevationModel version="1" modelType="Compound">
+	<ElevationModel version="1">
+		<DisplayName>trentoDTM</DisplayName>
+		<Service serviceName="OGC:WMS" version="1.1.1">
+			<GetCapabilitiesURL>http://77.72.192.34:8080/geoserver/INFOTN/wms
+			</GetCapabilitiesURL>
+			<GetMapURL>http://77.72.192.34:8080/geoserver/INFOTN/wms</GetMapURL>
+			<LayerNames>INFOTN_DTM_4326</LayerNames>
+		</Service>
+		<RetrievePropertiesFromService>true</RetrievePropertiesFromService>
+		<!-- day month year hours:minutes:seconds timezone -->
+		<LastUpdate>17 12 2009 01:01:01 GMT</LastUpdate>
+		<DataCacheName>INFOTN_DTM_4326</DataCacheName>
+		<ImageFormat>application/bil16</ImageFormat>
+		<DataType type="Int16" byteOrder="BigEndian"></DataType>
+		<DataDetailHint>0.5</DataDetailHint>
+		<FormatSuffix>.bil</FormatSuffix>
+		<NumLevels count="12" numEmpty="0"></NumLevels>
+		<MissingData signal="-32767.0" />
+		<ExtremeElevations min="0" max="1000" />
+		<TileOrigin>
+			<LatLon units="degrees" latitude="-90" longitude="-180" />
+		</TileOrigin>
+		<LevelZeroTileDelta>
+			<LatLon units="degrees" latitude="20" longitude="20" />
+		</LevelZeroTileDelta>
+		<TileSize>
+			<Dimension width="150" height="150"></Dimension>
+		</TileSize>
+		<Sector>
+			<SouthWest>
+				<LatLon units="degrees" latitude="45.99"
+					longitude="11.0146" />
+			</SouthWest>
+			<NorthEast>
+				<LatLon units="degrees" latitude="46.154"
+					longitude="11.23" />
+			</NorthEast>
+		</Sector>
+	</ElevationModel>
+</ElevationModel>

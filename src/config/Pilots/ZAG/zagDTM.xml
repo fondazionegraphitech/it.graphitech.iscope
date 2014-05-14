@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ElevationModel version="1" modelType="Compound">
+    <ElevationModel version="1">
+        <DisplayName>zagDTM</DisplayName>
+        <Service serviceName="OGC:WMS" version="1.3">
+            <GetCapabilitiesURL>http://77.72.192.34:8080/geoserver/ZAG/wms</GetCapabilitiesURL>
+            <GetMapURL>http://77.72.192.34:8080/geoserver/ZAG/wms</GetMapURL>
+            <LayerNames>ZAG_DTM_4326</LayerNames>
+        </Service>
+        <RetrievePropertiesFromService>true</RetrievePropertiesFromService>
+        <!-- day month year hours:minutes:seconds timezone -->
+        <LastUpdate>17 12 2009 01:01:01 GMT</LastUpdate>
+        <DataCacheName>zagDTM</DataCacheName>
+        <ImageFormat>application/bil16</ImageFormat>
+        <DataType type="Int16" byteOrder="BigEndian"></DataType>
+        <DataDetailHint>0.5</DataDetailHint>
+        <FormatSuffix>.bil</FormatSuffix>
+        <NumLevels count="3" numEmpty="0"/>
+           <ExtremeElevations min="0" max="500"/>
+        <TileOrigin>
+            <LatLon units="degrees" latitude="45.792850317484394" longitude="15.950161176243823"/>
+        </TileOrigin>
+        <LevelZeroTileDelta>
+        	<!-- SIZE OF THE WHOLE DTM -->
+            <LatLon units="degrees" latitude="0.024" longitude="0.024"/>
+        </LevelZeroTileDelta>
+        <TileSize>
+            <Dimension width="150" height="150"/>
+        </TileSize>
+        <Sector>
+            <SouthWest>
+                <LatLon units="degrees" latitude="45.792850317484394" longitude="15.950161176243823"/>
+            </SouthWest>
+            <NorthEast>
+                <LatLon units="degrees" latitude="45.816201890801636" longitude="16.019751309920128"/>
+            </NorthEast>
+        </Sector>
+    </ElevationModel>
+</ElevationModel>

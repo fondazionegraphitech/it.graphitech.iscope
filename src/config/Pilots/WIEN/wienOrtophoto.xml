@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layer version="1" layerType="TiledImageLayer">
+    <DisplayName>wienOrtophoto</DisplayName>
+    <Service serviceName="OGC:WMS" version="1.3.0">
+        <GetCapabilitiesURL>http://77.72.192.34:8080/geoserver/wms</GetCapabilitiesURL>
+        <GetMapURL>http://77.72.192.34:8080/geoserver/wms</GetMapURL>
+        <LayerNames>WIEN:orthophoto_4326</LayerNames>
+    </Service>
+    <RetrievePropertiesFromService>false</RetrievePropertiesFromService>
+    <!--day month year hours:minutes:seconds timezone -->
+    <DataCacheName>wienOrtophoto</DataCacheName>
+    <ImageFormat>image/dds</ImageFormat>
+    <AvailableImageFormats>
+        <ImageFormat>image/jpeg</ImageFormat>
+        <ImageFormat>image/png</ImageFormat>
+        <ImageFormat>image/gif</ImageFormat>
+    </AvailableImageFormats>
+    <FormatSuffix>.dds</FormatSuffix>
+    <NumLevels count="16" numEmpty="7"/>
+    <TileOrigin>
+        <LatLon units="degrees" latitude="-90" longitude="-180"/>
+    </TileOrigin>
+    <LevelZeroTileDelta>
+        <LatLon units="degrees" latitude="36" longitude="36"/>
+    </LevelZeroTileDelta>
+    <TileSize>
+        <Dimension width="512" height="512"/>
+    </TileSize>
+    <Sector>
+        <SouthWest>
+            <LatLon units="degrees" latitude="48.20587597917112" longitude="16.351358608932376"/>
+        </SouthWest>
+        <NorthEast>
+            <LatLon units="degrees" latitude="48.21559426832686" longitude="16.368467749840953"/>
+        </NorthEast>
+    </Sector>
+    <UseTransparentTextures>false</UseTransparentTextures>
+    <!--<ScreenCredit creditType="ScreenImage">-->
+    <!--<FileName>images/32x32-icon-nasa.png</FileName>-->
+    <!--<Link>http://worldwind.arc.nasa.gov/java</Link>-->
+    <!--</ScreenCredit>-->
+    <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="20000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+</Layer>

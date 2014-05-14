@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$Id: TnNetLayer.xml 1 2011-07-16 23:22:47Z dcollins $-->
+<Layer version="1" layerType="TiledImageLayer">
+    <DisplayName>zonizzazioneTN</DisplayName>
+    <Service serviceName="OGC:WMS" version="1.1.1">
+        <GetCapabilitiesURL>http://193.205.215.100/geoserver/wms</GetCapabilitiesURL>
+        <GetMapURL>http://193.205.215.100/geoserver/wms</GetMapURL>
+        <LayerNames>iSCOPE:zonizzazioneTN</LayerNames>
+    </Service>
+    <RetrievePropertiesFromService>false</RetrievePropertiesFromService>
+    <!--day month year hours:minutes:seconds timezone -->
+    <DataCacheName>zonizzazioneTN</DataCacheName>
+    <ImageFormat>image/png</ImageFormat>
+    <AvailableImageFormats>
+        <ImageFormat>image/jpeg</ImageFormat>
+        <ImageFormat>image/png</ImageFormat>
+        <ImageFormat>image/gif</ImageFormat>
+    </AvailableImageFormats>
+    <FormatSuffix>.png</FormatSuffix>
+    <NumLevels count="12" numEmpty="0"/>
+    <TileOrigin>
+        <LatLon units="degrees" latitude="-90" longitude="-180"/>
+    </TileOrigin>
+    <LevelZeroTileDelta>
+        <LatLon units="degrees" latitude="0.1" longitude="0.1"/>
+    </LevelZeroTileDelta>
+    <TileSize>
+        <Dimension width="128" height="128"/>
+    </TileSize>
+    <Sector>
+        <SouthWest>
+            <LatLon units="degrees" latitude="45.6276" longitude="10.4118"/>
+        </SouthWest>
+        <NorthEast>
+            <LatLon units="degrees" latitude="46.5747" longitude="11.9999"/>
+        </NorthEast>
+    </Sector>
+    <UseTransparentTextures>false</UseTransparentTextures>
+    <!--<ScreenCredit creditType="ScreenImage">-->
+    <!--<FileName>images/32x32-icon-nasa.png</FileName>-->
+    <!--<Link>http://worldwind.arc.nasa.gov/java</Link>-->
+    <!--</ScreenCredit>-->
+    <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="20000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+</Layer>
